@@ -1,75 +1,95 @@
-# React + TypeScript + Vite
+# Jothiprakash Thangaraj — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Jothiprakash Thangaraj, a Software Engineer focused on backend systems, distributed systems, machine learning, and AI.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio showcases selected engineering work, professional experience, technical foundations, and projects spanning:
 
-## React Compiler
+- Backend Engineering
+- Distributed Systems
+- System Design
+- Java & Software Engineering
+- Machine Learning
+- AI / LLM Applications
+- MLOps
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The portfolio is focused on practical engineering work and learning through implementation.
 
-## Expanding the ESLint configuration
+## Featured Work
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Some of the highlighted projects include:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **FileStore** — Distributed remote file server backend
+- **StreamSpace** — Streaming-focused backend, UI, and media processing components
+- **Idempotency Processing** — Exploration of safe repeated request processing
+- **Redis Server Lite** — Lightweight Redis server implementation in Java
+- **RAG MLOps** — Retrieval-augmented generation and ML engineering
+- **MiniGPT** — Implementation-oriented exploration of GPT-style language models
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+More projects and experiments are available on my [GitHub profile](https://github.com/TJothiprakash).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tech Stack
 
+### Frontend
+
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+
+### Engineering
+
+- Java
+- Python
+- SQL
+- Spring Boot
+- WebFlux
+- REST APIs
+- WebSockets
+
+### Data & Infrastructure
+
+- PostgreSQL
+- MySQL
+- Redis
+- Kafka
+- RabbitMQ
+- Docker
+- Kubernetes
+- Linux
+- GitHub Actions
+
+### AI / ML
+
+- PyTorch
+- scikit-learn
+- NumPy
+- Pandas
+- MLflow
+- Hugging Face
+- RAG
+- LLMs
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/TJothiprakash/jothiprakash-portfolio.git
+cd jothiprakash-portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies and start the development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+npm run dev
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+To create a production build and preview it locally:
 
+```bash
+npm run build
+npm run preview
 ```
