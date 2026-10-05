@@ -83,7 +83,7 @@ export function Hero() {
               <span aria-hidden="true">↓</span>
             </a>
             <a
-              href="/Jothiprakash_Thangaraj_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Jothiprakash_Thangaraj_Resume.pdf`}
               target="_blank"
               rel="noreferrer"
               aria-label="Resume (opens in a new tab)"
